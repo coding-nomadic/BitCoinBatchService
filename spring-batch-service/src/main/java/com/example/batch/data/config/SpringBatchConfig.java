@@ -75,7 +75,7 @@ public class SpringBatchConfig {
 
     @Bean
     public Job runJob() {
-        return jobBuilderFactory.get("importCustomers").flow(step()).end().build();
+        return jobBuilderFactory.get("importBitcoin").flow(step()).end().build();
     }
 
 }
